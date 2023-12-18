@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>รายชื่อนักศึกษา</h1>
+    <ol>
+        <ul>รหัสนักศึกษา 010 ชลิต ถนอมนวล</ul>
+        <ul>รหัสนักศึกษา 053 อาดัม อาแว</ul>
+    </ol>
+    <h1>ฟอร์มลงทะเบียนศิษย์เก่า IT & IS</h1>
+    <form action="" method="post">
+        <label for="fistname">ชื่อ-นามสกุล : </label>
+        <input type="text" name="fistname">
+        <br>
+
+        <label for="studentID">รหัสนักศึกษา : </label>
+        <input type="text" name="StudentID">
+        <br>
+
+        <label for="gender">เพศ : </label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">ชาย</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">หญิง</label>
+        <input type="radio" name="gender" id="lgbt" value="lgbt">
+        <label for="lgbt">เพศทางเลือก</label>
+        <br>
+
+        <label for="year">ปีการศึกษาที่เข้าศึกษา(พ.ศ) : </label>
+        <input type="text" name="year" id="year" maxlength="4">
+        <br>
+
+        <label for="address">ที่อยู่ : </label><br>
+        <textarea name="address" id="adddress" cols="30" rows="10"></textarea>
+        <br>
+
+        <label for="email">อีเมล : </label>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="phone">เบอร์โทร : </label>
+        <input type="text" name="phone" id="phone" maxlength="10">
+        <br>
+
+        <label for="department">ชื่อหลักสูตร</label>
+        <input type="radio" name="department" id="it">
+        <label for="it">IT</label>
+        <input type="radio" name="department" id="is">
+        <label for="it">IS</label>
+        <br>
+
+        <label for="work">อาชีพปัจจุบัน</label>
+        <input type="text" name="work" id="work">
+        <br>
+
+        <label for="work-address">ที่อยู่ที่ทำงาน : </label><br>
+        <textarea name="work-address" id="work-adddress" cols="30" rows="10">(ระบุชื่อบริษัทและที่อยู่)</textarea>
+        <br>
+
+        <label for="type-work">ประเภทงานที่ทำ : </label>
+        <select name="type-work" id="">
+            <option value="Web-Developer">Web Developer</option>
+            <option value="SA">SA</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+        </select>
+        <br>
+
+        <label for="self-image">upload รูปถ่ายตนเอง : </label>
+        <input type="file">
+        <br>
+
+        <input type="submit" value="ส่ง">
+        <input type="reset" value="เคลียร์">
+
+
+    </form>
+</body>
+</html> 
