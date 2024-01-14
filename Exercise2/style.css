@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+
+#heading{
+    text-align: center;
+    font-size: 40px;
+    color: #513626;
+}
+
+.ingredient{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    img{
+        float: ;
+    }
+
+    ol{
+        list-style: none;
+        padding: 0px;
+    }
+}
+
+.instruction{    
+    width: 80%;
+    margin: auto;
+
+    h2{
+        font-size: 30px;
+        color: #513626;
+    }
+
+    div{
+        margin: 40px;
+    }
+}
+
+.step1{
+    img{
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    h3{
+        padding-top: 60px;
+    }
+}
+
+.step2{
+    clear: both;
+
+    img{
+        float: right;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    h3{
+        padding-top: 40px;
+    }
+}
+
+.step3{
+    clear: both;
+
+    img{
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    h3{
+        padding-top: 70px;
+    }
+}
+
+.table-container{
+    clear: both;
+    
+    table{
+        margin: auto;
+    }
+}
