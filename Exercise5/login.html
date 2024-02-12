@@ -61,7 +61,7 @@
     <!-- java script -->
     <script>
         document.addEventListener("DOMContentLoaded",function() {
-            document.querySelector("form").onsubmit = function() {
+            document.querySelector("#loginForm").addEventListener("submit",(event) =>  {
                 let username = document.querySelector("#username").value;
                 let password = document.querySelector("#password").value;
 
@@ -82,9 +82,10 @@
                 if(checkUsername&&checkPassword){
                     return true;
                 }else{
+                    event.preventDefault();
                     return false;
                 }
-            }
+            });
         });
     </script>
     
@@ -98,15 +99,15 @@
                         alt="loginImage" class="img-fluid" >
                 </div>
                 <div class="col-12 col-sm-8 col-md-6 p-0">
-                    <form action="">
-                        <h1 class="pb-3 text-center text-primary ">Login</h1>
+                    <form action="" id="loginForm">
+                        <h1 class="pb-3 text-center text-primary fs-2">Login</h1>
                         <p class="mb-2">Username :</p>
                         <input type="text" name="Username" id="username" placeholder="&#xF4D7;   Type your username" style="font-family: Bootstrap-icons;">
                         <p id="errorUsername" class="error"></p>
                         <p  class="mb-2"    >Password :</p>
                         <input type="password" name="password" id="password" placeholder="&#xF47B;  Type your password"  style="font-family: Bootstrap-icons;">
                         <p id="errorPassword" class="error"></p>
-                        <input type="submit" value="Sign in" class="btn btn-primary px-3 mt-3 text-center" style="width: 100%;">    
+                        <input type="submit" value="Sign in" class="btn btn-primary px-3 mt-3 text-center rounded-5 " style="width: 100%;">    
                     </form>
                 </div>
             </div>
