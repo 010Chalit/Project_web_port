@@ -67,14 +67,18 @@
 
                 let checkUsername = false;
                 if(username.length < 8){
-                    document.querySelector("#errorUsername").innerHTML="Username must be 8 characters or more!";
+                    // document.querySelector("#errorUsername").innerHTML="Username must be 8 characters or more!";
+                    document.getElementById('errorUsername').style.display = "block"
+                    alert("Username must be 8 characters or more! \nUsername " + username.length +" Charecter");
                 }else{
                     checkUsername = true;
                 }
 
                 let checkPassword = false;
                 if(password.length < 8){
-                    document.querySelector("#errorPassword").innerHTML= "Password must be 8 characters or more!";
+                    // document.querySelector("#errorPassword").innerHTML= "Password must be 8 characters or more!";
+                    document.getElementById('errorPassword').style.display = "block"
+                    alert("Password  must be 8 characters or more! \nPassword " + password.length +" Charecter");
                 }else{
                     checkPassword = true;
                 }
@@ -99,15 +103,15 @@
                         alt="loginImage" class="img-fluid" >
                 </div>
                 <div class="col-12 col-sm-8 col-md-6 p-0">
-                    <form action="" id="loginForm">
+                    <form action="https://example.com/" id="loginForm">
                         <h1 class="pb-3 text-center text-primary fs-2">Login</h1>
-                        <p class="mb-2">Username :</p>
+                        <p class="mb-2 mt-3">Username :</p>
                         <input type="text" name="Username" id="username" placeholder="&#xF4D7;   Type your username" style="font-family: Bootstrap-icons;">
-                        <p id="errorUsername" class="error"></p>
-                        <p  class="mb-2"    >Password :</p>
+                        <p id="errorUsername" class="error m-0r" style="display: none;">Username must be 8 characters or more!</p>
+                        <p  class="mb-2 mt-3">Password :</p>
                         <input type="password" name="password" id="password" placeholder="&#xF47B;  Type your password"  style="font-family: Bootstrap-icons;">
-                        <p id="errorPassword" class="error"></p>
-                        <input type="submit" value="Sign in" class="btn btn-primary px-3 mt-3 text-center rounded-5 " style="width: 100%;">    
+                        <p id="errorPassword" class="error m-0" style="display: none;">Password must be 8 characters or more!</p>
+                        <input type="submit" value="Sign in" class="btn btn-primary px-3 mt-4 text-center rounded-5" style="width: 100%;">    
                     </form>
                 </div>
             </div>
