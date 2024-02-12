@@ -50,7 +50,7 @@ p{
 }
 
 .intro-name{
-    font-size: 80px;
+    font-size: 60px;
     letter-spacing: -2px;
     line-height: 90%;
     font-family: 'Grape Nuts', cursive;
@@ -118,7 +118,7 @@ p{
     .heading-text{
         font-weight: bold;
         color: darkorange;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 
