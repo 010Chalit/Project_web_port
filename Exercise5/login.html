@@ -67,8 +67,8 @@
                 }
 
                 let checkPassword = false;
-                if(password.length < 1){
-                    document.querySelector("#errorPassword").innerHTML= "Please input your password!";
+                if(password.length < 8){
+                    document.querySelector("#errorPassword").innerHTML= "Password must be 8 characters or more!";
                 }else{
                     checkPassword = true;
                 }
