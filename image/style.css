@@ -1,0 +1,184 @@
+:root{
+    --basecolor: #0c0d19;
+    --secondcolor: #ffca2c;
+    --topicFont: 'Grape Nuts', cursive;
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: var(--basecolor);
+}
+
+p{
+    font-weight: 300;
+}
+
+.heading-text{
+    font-family: 'Grape Nuts', cursive;
+
+    span{
+        font-family: 'Grape Nuts', cursive;
+        color: var(--secondcolor);
+    }
+}
+
+.nav-link{
+    margin: 0 10px;
+    color: white;
+}
+
+.nav-link:hover{
+    color: var(--secondcolor);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-container{
+    background-color: var(--basecolor);
+}
+
+.active{
+    color: var(--secondcolor) !important;
+    font-weight: bold;
+}
+
+.btn{
+    font-family: 'Grape Nuts', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.intro-name{
+    font-size: 80px;
+    letter-spacing: -2px;
+    line-height: 90%;
+    font-family: 'Grape Nuts', cursive;
+}
+
+/* intro-container */
+.intro-container{
+    height: 550px;
+    background-color: var(--basecolor);
+    
+
+    .container{
+        max-height: 500px;
+        padding: 20px;
+        
+    }
+
+    .row{
+        height: 100%;
+        
+    }
+
+    .left-card{
+        background-color: hsla(0, 0%, 100%, 0.7);;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .myImage{
+        height: 100%;
+        object-fit: cover ;
+    }
+
+    .btn{
+        border-radius:  50px;
+        width: 150px;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .right-card{
+        display: none;
+    }
+}
+
+/* introduce-container */
+.second-container{
+
+    .content{
+        height: 100%;
+    }
+
+    .intro-dsc{
+        padding-left: 40px;
+    }
+
+    .icon-content{
+        img{
+            max-width: 40px;
+            margin-right: 20px;
+        }
+    }
+
+    .heading-text{
+        font-weight: bold;
+        color: darkorange;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px){
+    .second-image{
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .intro-dsc{
+        padding-left: 0px !important;
+    }
+
+    .content{
+        align-items: center;
+
+        h1{
+            text-align: center;
+        }
+        
+        p{
+            text-align: center;
+        }
+    }
+}
+
+/* exercise-content */
+.exercise-contianer{
+    background-color: var(--basecolor);
+    
+    h1{
+        font-family: var(--topicFont);
+        font-size: 60px;
+    }
+
+    img{
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .col{
+        min-width: 300px;
+        max-width: 400px;
+        
+        .card{
+            height: 100%;
+        }
+    }
+
+
+}
+
+/* project-container */
+footer{
+    .icon-contain{
+        justify-self: center !important;
+
+        img{
+            max-width: 30px;
+            margin-left: 20px;
+        }
+    }
+}

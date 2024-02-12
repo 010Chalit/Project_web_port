@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .form-container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.unsplash.com/photo-1702311178078-1edf877d3afe?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+        }
+
+        form{
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 340px;
+        }
+
+        .error{
+            color: red;
+            font-size: 14px;
+        }
+
+        #username,#password{
+            width: 100%;
+            border: none;
+            padding: 10px 5px;
+            border-bottom: 2px solid gainsboro;
+        }
+
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+    </style>
+
+    <!-- java script -->
+    <script>
+        document.addEventListener("DOMContentLoaded",function() {
+            document.querySelector("form").onsubmit = function() {
+                let username = document.querySelector("#username").value;
+                let password = document.querySelector("#password").value;
+
+                let checkUsername = false;
+                if(username.length < 8){
+                    document.querySelector("#errorUsername").innerHTML="Username must be 8 characters or more!";
+                    alert("Wrong Username or Password");
+                }else{
+                    checkUsername = true;
+                }
+
+                let checkPassword = false;
+                if(password.length < 1){
+                    document.querySelector("#errorPassword").innerHTML= "Please input your password!";
+                }else{
+                    checkPassword = true;
+                }
+
+                if(checkUsername&&checkPassword){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <h1 class="pb-3 text-center ">Login</h1>
+            <p class="mb-2">Username</p>
+            <input type="text" name="Username" id="username" placeholder="Type your username">
+            <p id="errorUsername" class="error"></p>
+            <p  class="mb-2"    >Password</p>
+            <input type="password" name="password" id="password" placeholder="Type your password">
+            <p id="errorPassword" class="error"></p>
+            <input type="submit" value="Sign in" class="btn btn-success border-dark px-3 mt-3 text-end">
+        </form>
+    </div>
+</body>
+</html>

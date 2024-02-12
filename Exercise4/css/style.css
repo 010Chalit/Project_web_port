@@ -1,0 +1,62 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+p{
+    font-weight: 300;
+}
+
+.heading-text{
+    font-family: 'Grape Nuts', cursive;
+}
+
+.nav-link{
+    margin: 0 10px;
+    color: white;
+}
+
+.nav-link:hover{
+    color: darkorange;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.portfolio-container{
+    color: white;
+
+    .portfolio{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bi{
+        font-size: 40px;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .card1:hover{
+        color: darkorange;
+        cursor: pointer;
+    }
+}
+
+.card-content{
+    text-align: center;
+
+    div{
+        padding: 0;
+    }
+
+    .card{
+        margin: 0 15px;
+        width: 100px;
+    }
+
+    .card-body{
+        padding: 20px 10px;
+    }
+}
+  
