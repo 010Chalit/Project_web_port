@@ -22,6 +22,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Itim&family=Noto+Serif+Thai:wght@300&family=Rubik:wght@300;400;500&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="style.css">
@@ -45,13 +48,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Me</a>
+                            <a class="nav-link" href="#about-me">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Works </a>
+                            <a class="nav-link" href="#exercise">Works </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -60,32 +63,29 @@
     </div>
 
     <!-- intro-container -->
-    <div class="container-fluid intro-container">
+    <div class="container-fluid intro-container" style="background-image: url(image/Group\ 18.jpg); background-size: cover; height: 700px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 bg-white col-sm-12 p-5 left-card d-flex justify-content-center flex-column">
+                <div class="col p-5 left-card d-flex justify-content-center flex-column">
                     <p class="">hello, I'am</p>
-                    <h1 class="mt-2 intro-name">Chalit <br>Thanomnual</h1>
+                    <h1 class="mt-2 intro-name ">Chalit Thanomnual</h1>
                     <p class="my-4">I'am second year student of Prince of Songkla University Surathani Campus.</p>
-                    <div class="btn-content d-flex">
+                    <div class="btn-content mt-3">
                         <a href="" class="btn btn-warning me-3">Check me!</a>
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-dark">
                             <i class="bi bi-github text-white"></i>
                             Github
                         </button>
                     </div>
                    
                 </div>
-                <div class="col-5 right-card p-0">
-                    <img src="image/2-modified.png" alt="profile-image" class="bg-white myImage img-fluid"
-                        height="200px">
-                </div>
+                
             </div>
         </div>
     </div>
 
     <!-- introduce-container -->
-    <div class="second-container container-fluid my-5">
+    <div class="second-container container-fluid my-5" id="about-me">
         <div class="container">
             <h1 class="heading-text text-center border-bottom border-3 mb-5">About me</h1>
             <div class="row">
@@ -96,7 +96,7 @@
                     <div class="content d-flex flex-column justify-content-center">
 
                         <p>Hello, my friend ;) I am</p>
-                        <h1 class="intro-name">Chalit Thanomnual</h1>
+                        <h1 class="name"> <span>Chalit</span>  <br>Thanomnual</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis labore incidunt
                             eveniet necessitatibus perspiciatis non cum. Et porro fugit dicta, laudantium impedit harum,
                             eligendi quas labore, similique consequuntur voluptatum!</p>
@@ -115,10 +115,10 @@
     </div>
 
     <!-- exercise-container -->
-    <div class="exercise-contianer container-fluid py-5">
+    <div class="exercise-contianer container-fluid py-5" id="exercise">
         <div class="container">
             <h1 class="text-white text-center pb-5">My Excerise</h1>
-            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-lg-5 g-3 justify-content-center">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-lg-5 g-3">
                 <!-- first-card -->
                 <div class="col">
                     <div class="card shadow-sm">
@@ -222,21 +222,21 @@
     </div> -->
 
     <!-- footer -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="contact">
         <footer class="row row-cols-1 row-cols-md-3 align-items-center py-3 px-5 my-4">
             <h1 class="heading-text col text-center py-2">Chalit Thanomnual</h1>
 
             <div class="icon-contain col text-center py-2">
-                <img src="icon/facebook.png" alt="facebook-icon">
-                <img src="icon/instagram.png" alt="instagram-icon">
-                <img src="icon/github.png" alt="github-icon">
+                <a href="https://www.instagram.com/_ch_new/" target="_blank"><img src="icon/facebook.png" alt="facebook-icon"></a>
+                <a href="https://www.facebook.com/nongnew.new.9/" target="_blank"><img src="icon/instagram.png" alt="instagram-icon"></a>
+                <a href="mailto:Chalit.31771@gmail.com"><img src="icon/gmail.png" alt="github-icon"></a>
             </div>
 
             <ul class="nav col justify-content-center text-center py-2">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About me</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Works</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+                <li class="nav-item"><a href="#about-me" class="nav-link px-2 text-body-secondary">About me</a></li>
+                <li class="nav-item"><a href="#exercise" class="nav-link px-2 text-body-secondary">Works</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
             </ul>
         </footer>
     </div>

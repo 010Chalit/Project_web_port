@@ -5,8 +5,7 @@
 }
 
 *{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
     color: var(--basecolor);
 }
 
@@ -60,7 +59,7 @@ p{
 /* intro-container */
 .intro-container{
     height: 550px;
-    background-color: var(--basecolor);
+    background-image: linear-gradient(to bottom, #0c0d19, #15234c, #173784, #1c4cc0, #2e60ff);
     
 
     .container{
@@ -75,8 +74,29 @@ p{
     }
 
     .left-card{
-        background-color: hsla(0, 0%, 100%, 0.7);;
-        border-radius: 50px 0 0 50px;
+        background-color: hsla(0, 0%, 100%, 0.2);;
+        border-radius: 40px;
+        height: 650px;
+        backdrop-filter: blur(5px);
+        text-align: center;
+
+        p{
+            color: white;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        h1{
+            color: var(--secondcolor);
+        }
+
+        .btn{
+            margin: 0 auto;
+        }
+    }
+
+    .right-card{
+        background-color: hsla(0, 0%, 100%, 0.404);;
     }
 
     .myImage{
@@ -85,7 +105,6 @@ p{
     }
 
     .btn{
-        border-radius:  50px;
         width: 150px;
     }
 
@@ -121,6 +140,17 @@ p{
         color: darkorange;
         font-size: 3.5rem;
     }
+
+    .name{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        color: #0c0d19;
+        font-size: 40px;
+
+        span{
+            color: var(--secondcolor);
+        }
+    }
 }
 
 @media (max-width: 768px){
@@ -148,7 +178,7 @@ p{
 
 /* exercise-content */
 .exercise-contianer{
-    background-color: var(--basecolor);
+    background-image: linear-gradient(to bottom, #0c0d19, #15234c, #173784, #1c4cc0, #2e60ff);
     
     h1{
         font-family: var(--topicFont);
